@@ -1,0 +1,522 @@
+/*Styling body of all Web pages*/
+
+body {
+    background-color:rgb(234, 207, 174) ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling Footer for all Web pages */
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+/*Styling Header of all Web pages*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: rgb(217, 189, 154);
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 15pxpx;
+}
+
+nav a {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: rgb(55, 30, 30);
+}
+
+/*Home Page Styling */
+
+.home-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-page h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+}
+
+.home-page h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+}
+
+.welcome-section {
+    background-color:rgb(234, 207, 174) ;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.home-page p {
+    text-align: center;
+    text-decoration: wavy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(55, 30, 30);
+    background-color: rgb(217, 189, 154);
+    border-radius: 15px;
+}
+
+/* About Page Styling */
+
+.about-us{
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+.about-us h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;  
+}
+
+.about-us p {
+    background-color: rgb(217, 189, 154);
+    text-align: center;
+    text-decoration: wavy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(55, 30, 30);
+    margin-top: auto;
+    border-radius: 15px;
+}
+
+.Meet-our-team {
+    max-width: 1200px;
+    margin: 0 auto; 
+    
+}
+
+.Meet-our-team p{
+    background-color: rgb(217, 189, 154);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(55, 30, 30);
+    margin-top: auto;
+    border-radius: 15px;  
+}
+
+.team-img {
+    width: 10px;
+    height: auto;
+    border-radius: 25px;
+    display: flex;
+   flex: 1;
+}
+.meet-our-team {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.meet-our-team h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    margin-bottom: 30px;
+}
+
+.featured-member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0e0d0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    background-color: #f0e0d0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.team-img {
+    max-width: 150px;   
+    height: auto;       
+    border-radius: 15px;
+    display: block;
+}
+
+.member-info {
+    flex: 1;
+    text-align: left;
+}
+
+.member-info p {
+    margin: 0;
+    font-size: 30px; 
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    line-height: 1.4;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .featured-member, .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-img {
+        margin-bottom: 10px;
+    }
+
+    .member-info {
+        text-align: center;
+    }
+}
+
+
+.our-goal {
+    text-align: center;   
+    margin: 40px auto;    
+    max-width: 900px;     
+}
+
+.our-goal h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    margin-bottom: 15px;
+}
+
+.our-goal p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(55, 30, 30);
+    background-color: #f0e0d0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Products Page Styling */
+
+.products-page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.products-page h1 {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Times New Roman', Times, serif;
+  color: brown;
+  margin-bottom: 15px;
+}
+
+.products-page .intro {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 40px;
+}
+
+.product-category {
+  background-color: #f0e0d0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product-category h2 {
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+  color: brown;
+  margin-bottom: 10px;
+}
+
+.product-category .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkred;
+}
+
+.product-category p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto 15px;
+  max-width: 800px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.product-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.product-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; 
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-img:hover {
+  transform: scale(1.08);
+}
+
+/* Contact Us Page Main Content */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(234, 207, 174);
+    border-radius: 15px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+main p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(55, 30, 30);
+    background-color: rgb(217, 189, 154);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Contact sections */
+section {
+    background-color: #f0e0d0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+section p, section a {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(55, 30, 30);
+}
+
+section a {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+
+section a:hover {
+    color: rgb(55, 30, 30);
+    text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"] {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(55, 30, 30);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        padding: 20px 10px;
+    }
+
+    section h2, section p, section a {
+        text-align: center;
+    }
+}
+/* Past Clients Page Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(217, 189, 154);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.header__logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav li a {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.header__nav li a:hover {
+    color: rgb(55, 30, 30);
+    background-color: rgb(245, 220, 190);
+    border-radius: 5px;
+}
+
+
+.main-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(234, 207, 174);
+    border-radius: 15px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(55, 30, 30);
+    background-color: rgb(217, 189, 154);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.client-review {
+    background-color: #f0e0d0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.client-name {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.client-comment {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(55, 30, 30);
+    margin-bottom: 10px;
+}
+
+.client-review--placeholder {
+    background-color: rgb(217, 189, 154);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
