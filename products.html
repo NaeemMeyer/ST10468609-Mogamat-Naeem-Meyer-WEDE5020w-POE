@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SK_Lasercuts | Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SK_Lasercuts | Products</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <img src="_images/p-logo.png.jpeg" alt="SK_Lasercuts Logo" width="150">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>    <!-- Navigation between pages -->
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="reviews.html">Past Clients</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="_images/b-logo.png.jpeg" alt="SK_Lasercuts Logo" width="150">
+    </div>
+    <nav class="nav">
+      <ul>
+        <a href="index.html">Home |</a>
+        <a href="about-us.html">About Us |</a>
+        <a href="products.html">Products |</a>
+        <a href="reviews.html">Past Clients |</a>
+        <a href="contact-us.html">Contact Us |</a>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Our Products</h1> <!-- Name of the page -->
-        <p> Choose from a set design or collabrate with the designers to create your own personalised wooden gift.</p>
+  <main class="products-page">
+    <h1>Our Products</h1>
+    <p class="intro">Choose from a set design or collaborate with the designers to create your own personalised wooden gift.</p>
 
-        <section>
-            <h2>Teacher gifts From:R220 (board size: 37cm )</h2>
-                <p>Looking for a gift for our amazing teachers? Designer your own gift.</p>
-                    <img src="_images/teach1.png.jpeg" alt="Wooden Gift Box" width="50"> <!-- Images added to display work -->
-                    <img src="_images/teach2.png.jpeg" alt="Wooden Gift Box" width="50"> <!-- Images added to display work -->
-                    <img src="_images/teach3.png.jpeg" alt="Wooden Gift Box" width="50"> <!-- Images added to display work -->
-            
-        </section>
+    <!-- Teacher Gifts -->
+    <section class="product-category">
+      <h2>Teacher Gifts <span class="price">From R220</span></h2>
+      <p>Looking for a gift for our amazing teachers? Design your own gift.</p>
+      <div class="product-gallery">
+        <img src="_images/teach1.png.jpeg" alt="Teacher Gift 1" class="product-img">
+        <img src="_images/teach2.png.jpeg" alt="Teacher Gift 2" class="product-img">
+        <img src="_images/teach3.png.jpeg" alt="Teacher Gift 3" class="product-img">
+      </div>
+    </section>
 
-        <section>
-            <h2>Room Decor</h2>
-                <p>Includes all types of decor, from names to images. (Size subject to design) </p>
-                <p>Decorative wooden pieces to brighten any living space.</p>
-                    <img src="_images/decor1.png.jpeg"Room Decor" width="50"> <!-- Images added to display work -->
-                    <img src="_images/decor2.png.jpeg"Room Decor" width="50"> <!-- Images added to display work -->
-                    <img src="_images/clock1.png.jpeg"Room Decor" width="50"> <!-- Images added to display work -->
-            
-        </section>
+    <!-- Room Decor -->
+    <section class="product-category">
+      <h2>Room Decor</h2>
+      <p>Includes all types of decor, from names to images. (Size subject to design)</p>
+      <p>Decorative wooden pieces to brighten any living space.</p>
+      <div class="product-gallery">
+        <img src="_images/decor1.png.jpeg" alt="Room Decor 1" class="product-img">
+        <img src="_images/decor2.png.jpeg" alt="Room Decor 2" class="product-img">
+        <img src="_images/clock1.png.jpeg" alt="Clock Decor" class="product-img">
+      </div>
+    </section>
 
-        <section>
-            <h2>Birthday Gifts</h2>
-                <p>Personalized wooden gifts made special for a loved one's birthday.</p>
-                    <img src="_images/hbd1.png.jpeg" alt="Custom Frames" width=50"> <!-- Images added to display work -->
-                    <img src="_images/hbd2.png.jpeg" alt="Custom Frames" width=50"> <!-- Images added to display work -->
-        </section>
-    
-        <section>
-            <h2>Special Occasions</h2>
-                <p>Personalized wooden frames to showcase your favorite moments.</p>
-                    <img src="_images/Um1.png.jpeg" alt="Custom Frames" width=50"> <!-- Images added to display work -->
-                    <img src="_images/Um2.png.jpeg" alt="Custom Frames" width=50"> <!-- Images added to display work -->
-                    <img src="_images/Um3.png.jpeg" alt="Custom Frames" width=50"> <!-- Images added to display work -->
-        </section>
-    
-    </main>
+    <!-- Birthday Gifts -->
+    <section class="product-category">
+      <h2>Birthday Gifts</h2>
+      <p>Personalized wooden gifts made special for a loved one's birthday.</p>
+      <div class="product-gallery">
+        <img src="_images/hbd1.png.jpeg" alt="Birthday Gift 1" class="product-img">
+        <img src="_images/hbd2.png.jpeg" alt="Birthday Gift 2" class="product-img">
+      </div>
+    </section>
 
-<!-- Footer -->
-    <footer>
-        
-        <p> 2025 SK_Lasercuts. All Rights Reserved.</p> <img src="_images/banner.png.PNG" alt="Laser-cut products banner" length=300 width="300">
-    </footer>
+    <!-- Special Occasions -->
+    <section class="product-category">
+      <h2>Special Occasions</h2>
+      <p>Personalized wooden frames to showcase your favorite moments.</p>
+      <div class="product-gallery">
+        <img src="_images/Um1.png.jpeg" alt="Special Occasion 1" class="product-img">
+        <img src="_images/Um2.png.jpeg" alt="Special Occasion 2" class="product-img">
+        <img src="_images/Um3.png.jpeg" alt="Special Occasion 3" class="product-img">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>2025 SK_Lasercuts. All Rights Reserved.</p>
+    <img src="_images/banner.png.PNG" alt="Laser-cut products banner" height="100" width="100%">
+  </footer>
 </body>
 </html>
