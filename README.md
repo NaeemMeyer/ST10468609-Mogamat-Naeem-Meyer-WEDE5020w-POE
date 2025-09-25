@@ -282,4 +282,18 @@ Contact Us
 
 Wireframe:
 
+Working through Feedback for Part 1
+No feedback was given in time of submission for part 2. Hence, I wasn’t not able to correct mistakes if needed. 
+
+Base Style
+The base style gives the website a warm and inviting feel. Soft beige and brown tones create a cozy look, while rounded corners and gentle shadows make sections feel friendly and approachable. The layout is clean and organized, helping visitors focus on content without feeling crowded.
+
+Typography Styles
+The typography is classic yet easy to read. Large Times New Roman headings feel professional but approachable, while paragraph text uses Verdana and similar fonts for clarity. The combination of font sizes and colors creates a calm, pleasant reading experience.
+
+What Are the Responsive Designs
+The website is responsive and flexible, meaning it looks good on desktops, tablets, and smartphones. Navigation adjusts for smaller screens, sections stack neatly, and text centers for easier reading. This makes browsing smooth and stress-free on any device.
+
+Are the Images Responsive
+Images are carefully scaled to fit the design. Logos, banners, and product photos resize naturally without losing quality, keeping the pages visually balanced. Galleries and client photos remain clear and well-proportioned, adding warmth and personality to the site.
 
