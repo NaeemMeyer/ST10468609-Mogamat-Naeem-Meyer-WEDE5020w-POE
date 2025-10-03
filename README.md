@@ -283,7 +283,11 @@ Contact Us
 Wireframe:
 
 Working through Feedback for Part 1
-No feedback was given in time of submission for part 2. Hence, I wasn’t not able to correct mistakes if needed. 
+-Wireframes were incomplete, ammended them to look complete
+-Added more descriptive comments in the CSS folder as well as my html files to indicate and make it look easier for people to understand.
+-Updated Commits on Github to add more details.
+-Updated Changelog, no updates were previously done.
+
 
 Base Style
 The base style gives the website a warm and inviting feel. Soft beige and brown tones create a cozy look, while rounded corners and gentle shadows make sections feel friendly and approachable. The layout is clean and organized, helping visitors focus on content without feeling crowded.
