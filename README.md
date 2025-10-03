@@ -6,7 +6,7 @@ Organisation Overview:
 The organisation name is SK_Lasercuts. They provide laser cutting services like wooden gifts to clients. The clients can choose from a set design or customise their own design with the help of the owners. It was Founded in 2022 and was initially a side job for a retired nurse. She started by making a wooden gift for a baby shower of her niece. SK_lasercuts started with handmade gift ideas for family into a top quality and well known business based in the southern suburbs of Cape Town. I started with an idea of using hand crafted skills to having multiple lasercutters still ensuring quality personalised gifts for all.
 Vision Statement: “To become the leading provider of personalised laser-cut gifts, where creativity meets craftsmanship, and every design tells a unique story."
 
-Goals & Objectives:
+Goals & Objectives: 
 •	Display SK_Lasercuts’  portfolio of products and services offered to clients in a visually appealing way. Products are in the form of wooden gifts, frames décor, etc.
 •	Increase sales by increasing the number of eyes on the products.
 •	Establish SK_Lasercuts and a creative, trustworthy and professional laser cutting business in the Southern Suburbs in Cape Town.
