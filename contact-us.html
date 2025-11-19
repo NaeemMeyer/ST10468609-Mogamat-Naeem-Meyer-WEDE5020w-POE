@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SK_Lasercuts | Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK_Lasercuts | Contact Form, WhatsApp & Cape Town Location Map</title>
+    <meta name="description" content="Get in touch with SK_Lasercuts for custom laser cutting quotes or enquiries. Contact us via WhatsApp, Instagram, or use our secure contact form. View our Southern Suburbs, Cape Town location on the interactive map.">
+    <meta name="keywords" content="contact SK Lasercuts, laser cutting enquiry, Cape Town contact details, WhatsApp order, Southern Suburbs location, contact form, Leaflet map">
+    <link rel="stylesheet" href="style.css">
+    <!-- LEAFLET MAP REQUIREMENTS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js" defer></script>
+  
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-    <div class="logo">
-      <img src="_images/b-logo.png.jpeg" alt="SK_Lasercuts Logo" width="150">
-    </div>
-    <nav class="nav">
-      <ul>
-        <a href="index.html">Home |</a></li>
-        <a href="about-us.html">About Us |</a></li>
-        <a href="products.html">Products |</a></li>
-        <a href="reviews.html">Past Clients |</a></li>
-        <a href="contact-us.html">Contact Us |</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="header">
+    <div class="logo">
+      <img src="_images/b-logo.png.jpeg" alt="SK_Lasercuts Logo" width="150">
+    </div>
+    <nav class="nav">
+      <ul>
+        <a href="index.html">Home |</a></li>
+        <a href="about-us.html">About Us |</a></li>
+        <a href="products.html">Products |</a></li>
+        <a href="reviews.html">Past Clients |</a></li>
+        <a href="contact-us.html">Contact Us |</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Main content -->
-    <main>
-        <h1>Contact Us</h1>
-        <p>We’d love to hear from you! Use the details below or fill in the form.</p>
+    <!-- Main content -->
+    <main>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Use the details below or fill in the form.</p>
 
-        <!-- Contact details section -->
+        <!-- TABS SECTION (Interactive Element) -->
+        <section class="tabs-container">
+            <h2>Contact Options</h2>
+            <div class="tabs">
+                <div class="tab-list">
+                    <button class="tab-button active" data-tab-target="map">Find Our Location</button>
+                    <button class="tab-button" data-tab-target="form">Send a Message</button>
+                </div>
+
+                <div class="tab-content" data-tab-content="map">
+                    <!-- Interactive Map (Leaflet) -->
+                    <div id="sk-map" style="height: 300px; border-radius: 10px;"></div>
+                    <p style="text-align: center; margin-top: 15px;">
+                        **Address:** 10 Weaver Way, Zeekoevlei, Cape Town, 7941
+                    </p>
+                </div>
+
+                <div class="tab-content" data-tab-content="form" style="display: none;">
+                    <!-- Contact form (Validated and sendable to naeem.meyer1@gmail.com) -->
+                    <section>
+                        <form action="#" method="post">
+                            <label for="name">Your Name:</label><br>
+                            <input type="text" id="name" name="name" required><br><br>
+
+                            <label for="email">Your Email:</label><br>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <label for="message">Your Message:</label><br>
+                            <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+                            <input type="submit" value="Send">
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact details section - Kept separate from tabs -->
         <section>
-            <h2>Get in Touch</h2>
-            <p>WhatsApp:083 609 9704 (Kashifa Meyer – CEO & Head Designer.) </p>
-                <P>Instagram:</p> 
-                <a href="https://www.instagram.com/our_instagram_handley" target="_blank">
-                    @SK_lasercuts</a>
- 
+            <h2>Get in Touch Directly</h2>
+            <p>WhatsApp: **083 609 9704** (Kashifa Meyer – CEO & Head Designer.) </p>
+            <P>Instagram:</p> 
+            <a href="https://www.instagram.com/our_instagram_handley" target="_blank">@SK_lasercuts</a>
         </section>
 
-        <!-- Contact form -->
-        <section>
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post">
-                <label for="name">Your Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Your Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="message">Your Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
-
-                <input type="submit" value="Send">
-            </form>
-        </section>
-    </main>
+    </main>
 
 <!-- Footer -->
 
-    <div class="Footer"></div>
-        <footer>
-        
-        <p> 2025 SK_Lasercuts. All Rights Reserved.</p> <img src="_images/banner.png.PNG" alt="Laser-cut products banner" height=100 width="100%">
-
-        </footer>
+    <div class="Footer"></div>
+        <footer>
+        
+        <p> 2025 SK_Lasercuts. All Rights Reserved.</p> 
+        <div class="footer-banner">
+            <img src="_images/banner.png.PNG" alt="Laser-cut products banner" height="100" width="100%">
+        </div>
+        </footer>
 </body>
 </html>
-
-

@@ -1,81 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SK_Lasercuts | Products</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop SK_Lasercuts | Dynamic Gallery of Custom Laser Cut Products & Decor</title>
+  <meta name="description" content="Browse our dynamic gallery of laser cut products, including personalised teacher gifts, custom room decor, and unique wooden gifts. Use our search, filter, and sort options to find the perfect item.">
+  <meta name="keywords" content="shop laser cut items, custom wooden gifts, personalized decor for sale, room decor, teacher gift ideas, unique birthday gifts, product filter and search">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">
-      <img src="_images/b-logo.png.jpeg" alt="SK_Lasercuts Logo" width="150">
-    </div>
-    <nav class="nav">
-      <ul>
-        <a href="index.html">Home |</a>
-        <a href="about-us.html">About Us |</a>
-        <a href="products.html">Products |</a>
-        <a href="reviews.html">Past Clients |</a>
-        <a href="contact-us.html">Contact Us |</a>
-      </ul>
-    </nav>
-  </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="_images/b-logo.png.jpeg" alt="SK_Lasercuts Logo" width="150">
+    </div>
+    <nav class="nav">
+      <ul>
+        <a href="index.html">Home |</a>
+        <a href="about-us.html">About Us |</a>
+        <a href="products.html">Products |</a>
+        <a href="reviews.html">Past Clients |</a>
+        <a href="contact-us.html">Contact Us |</a>
+      </ul>
+    </nav>
+  </header>
 
-  <main class="products-page">
-    <h1>Our Products</h1>
-    <p class="intro">Choose from a set design or collaborate with the designers to create your own personalised wooden gift.</p>
+  <main class="products-page">
+    <h1>Our Products</h1>
+    <p class="intro">Choose from a set design or collaborate with the designers to create your own **personalised wooden gift**.</p>
 
-    <!-- Teacher Gifts -->
-    <section class="product-category">
-      <h2>Teacher Gifts <span class="price">From R220</span></h2>
-      <p>Looking for a gift for our amazing teachers? Design your own gift.</p>
-      <div class="product-gallery">
-        <img src="_images/teach1.png.jpeg" alt="Teacher Gift 1" class="product-img">
-        <img src="_images/teach2.png.jpeg" alt="Teacher Gift 2" class="product-img">
-        <img src="_images/teach3.png.jpeg" alt="Teacher Gift 3" class="product-img">
-      </div>
+    <!-- STATIC FEATURED PRODUCTS SECTION (Original Images) -->
+    <section class="featured-static-products">
+        <h2>Our Customer Favorites</h2>
+        <div class="product-gallery-grid" style="margin-bottom: 50px;">
+            
+            <div class="product-card">
+                <img src="_images/Um2.png.jpeg "Best Selling Wooden Frame" class="product-card-img" data-product-name="Classic Engraved Frame">
+                <div class="product-card-body">
+                    <h3 class="product-card-title">Classic Engraved Frame</h3>
+                    <p class="product-card-category">Always Available</p>
+                    <p class="product-card-price">R 199.00</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="_images/decor1.png.jpeg" "Acrylic Wall Art" class="product-card-img" data-product-name="Family Name Wall Art">
+                <div class="product-card-body">
+                    <h3 class="product-card-title">Family Name Wall Art</h3>
+                    <p class="product-card-category">Always Available</p>
+                    <p class="product-card-price">R 320.00</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="_images/season2.png.jpeg" alt="Wooden Keepsake Box" class="product-card-img" data-product-name="Large Keepsake Box">
+                <div class="product-card-body">
+                    <h3 class="product-card-title">Large Keepsake Box</h3>
+                    <p class="product-card-category">Always Available</p>
+                    <p class="product-card-price">R 280.00</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <!-- Room Decor -->
-    <section class="product-category">
-      <h2>Room Decor</h2>
-      <p>Includes all types of decor, from names to images. (Size subject to design)</p>
-      <p>Decorative wooden pieces to brighten any living space.</p>
-      <div class="product-gallery">
-        <img src="_images/decor1.png.jpeg" alt="Room Decor 1" class="product-img">
-        <img src="_images/decor2.png.jpeg" alt="Room Decor 2" class="product-img">
-        <img src="_images/clock1.png.jpeg" alt="Clock Decor" class="product-img">
-      </div>
+    <!-- SEARCH, FILTER, SORT CONTROLS (Dynamic Feature) -->
+    <section class="product-controls">
+        <h2>Browse Full Catalogue</h2>
+        <input type="text" id="productSearch" placeholder="Search product name..." class="search-input">
+
+        <select id="productFilter">
+            <option value="all">All Categories</option>
+            <option value="Teacher Gifts">Teacher Gifts</option>
+            <option value="Room Decor">Room Decor</option>
+            <option value="Birthday Gifts">Birthday Gifts</option>
+            <option value="Special Occasions">Special Occasions</option>
+        </select>
+
+        <select id="productSort">
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="price-asc">Price (Low to High)</option>
+            <option value="price-desc">Price (High to Low)</option>
+        </select>
     </section>
 
-    <!-- Birthday Gifts -->
-    <section class="product-category">
-      <h2>Birthday Gifts</h2>
-      <p>Personalized wooden gifts made special for a loved one's birthday.</p>
-      <div class="product-gallery">
-        <img src="_images/hbd1.png.jpeg" alt="Birthday Gift 1" class="product-img">
-        <img src="_images/hbd2.png.jpeg" alt="Birthday Gift 2" class="product-img">
-      </div>
+    <!-- DYNAMIC PRODUCT GALLERY CONTAINER (This is still controlled by JS) -->
+    <section id="dynamicProducts" class="product-gallery-grid">
+        <p>Loading products...</p>
     </section>
+	
+	<!-- Enquiry Form (Validated and sendable to naeem.meyer1@gmail.com) -->
+    <section class="product-enquiry">
+      <h2>Enquire About a Product</h2>
+      <p>
+        Interested in a product or custom design? Fill out the form below and our team will get back to you promptly.
+      </p>
 
-    <!-- Special Occasions -->
-    <section class="product-category">
-      <h2>Special Occasions</h2>
-      <p>Personalized wooden frames to showcase your favorite moments.</p>
-      <div class="product-gallery">
-        <img src="_images/Um1.png.jpeg" alt="Special Occasion 1" class="product-img">
-        <img src="_images/Um2.png.jpeg" alt="Special Occasion 2" class="product-img">
-        <img src="_images/Um3.png.jpeg" alt="Special Occasion 3" class="product-img">
-      </div>
-    </section>
-  </main>
+      <form action="#" method="post">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>2025 SK_Lasercuts. All Rights Reserved.</p>
-    <img src="_images/banner.png.PNG" alt="Laser-cut products banner" height="100" width="100%">
-  </footer>
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="product">Product of Interest:</label><br>
+        <input type="text" id="product" name="product" placeholder="e.g., Engraved Teacher Plaque" required><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Any details about your enquiry..." required></textarea><br><br>
+
+        <input type="submit" value="Submit Enquiry">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>2025 SK_Lasercuts. All Rights Reserved.</p>
+    <div class="footer-banner">
+        <img src="_images/banner.png.PNG" alt="Laser-cut products banner" height="100" width="100%">
+    </div>
+  </footer>
 </body>
 </html>
+
+
