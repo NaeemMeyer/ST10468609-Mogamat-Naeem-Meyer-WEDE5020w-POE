@@ -299,3 +299,34 @@ The website is responsive and flexible, meaning it looks good on desktops, table
 
 Are the Images Responsive
 Images are carefully scaled to fit the design. Logos, banners, and product photos resize naturally without losing quality, keeping the pages visually balanced. Galleries and client photos remain clear and well-proportioned, adding warmth and personality to the site.
+
+CHANGELOG FOR PART 3:
+
+-Updated navigation structure on all pages for improved mobile responsiveness.
+-Converted multi-line or improperly nested <ul>/<li> menus into a consistent, simplified format.
+-Ensured navigation displays horizontally on desktop and stacks vertically on mobile devices.
+
+HTML Structure & Semantics:
+
+-Corrected invalid or mismatched HTML tags (e.g., missing </li>, incorrect nesting, orphan tags).
+-Standardized header and footer markup across all pages for consistency.
+-Removed redundant or conflicting inline styles.
+
+Image Responsiveness
+
+-Applied consistent responsive behavior to all images using max-width: 100% and height: auto.
+-Ensured product images, banners, and logos scale correctly on mobile screens.
+-Removed fixed-pixel image sizing that caused layout issues.
+
+Accessibility & Best Practices
+
+Improved <alt> text usage on images.
+-Standardized HTML structure to maintain cleaner document flow.
+-Ensured all navigation elements remain keyboard-accessible.
+
+General Cleanup
+
+-Consolidated duplicate or unused HTML elements.
+-Corrected formatting for readability and future maintenance.
+-Unified spacing and indentation across all files.
+
